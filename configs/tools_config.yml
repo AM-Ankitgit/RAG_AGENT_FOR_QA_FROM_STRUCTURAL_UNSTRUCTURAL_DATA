@@ -1,6 +1,6 @@
 
 primary_agent:
-  llm: HuggingFaceH4/zephyr-7b-beta
+  llm: gpt-4o-mini #HuggingFaceH4/zephyr-7b-beta
   llm_temperature: 0.0
 
 
@@ -10,7 +10,7 @@ swiss_airline_policy_rag:
   collection_name: rag-chroma
   llm: HuggingFaceH4/zephyr-7b-beta
   llm_temperature: 0.0
-  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  embedding_model: text-embedding-3-small #sentence-transformers/all-MiniLM-L6-v2
   chunk_size: 500
   chunk_overlap: 100
   k: 2
@@ -20,9 +20,9 @@ stories_rag:
   unstructured_docs: "data/unstructured_docs/stories"
   vectordb: "data/stories_vectordb"
   collection_name: stories-rag-chroma
-  llm: HuggingFaceH4/zephyr-7b-beta
+  llm: gpt-4o-mini #HuggingFaceH4/zephyr-7b-beta
   llm_temperature: 0.0
-  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  embedding_model: text-embedding-3-small #sentence-transformers/all-MiniLM-L6-v2
   chunk_size: 500
   chunk_overlap: 100
   k: 2
